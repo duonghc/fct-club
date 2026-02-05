@@ -3,19 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="js/jquery-3.7.1.js"></script>
+    <script>
+        // Bài tập 1: Thay đổi màu chữ
+        $(document).ready(function() {
+            $("a").click(function(e) {
+                mau = e.target.id;
+                $("#content").addClass(mau);
+            })
+        })
+
+        // Bài tập 2: Thay đổi màu nền
+
+
+        // Bài tập 3: Thay đổi kích thước chữ
+
+
+    </script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Web Page</h1>
-    </header>
-    <main>
-        <p>This is a sample web page created to demonstrate the structure of an HTML document.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Web Page</p>
-    </footer>
+    <div id="main">
+        <h3>Chọn màu chữ</h3>
+        <ul class="clearfix">
+            <li><a href="javascript:void(0)" id="maudo">Đỏ</a></li>
+            <li><a href="javascript:void(0)" id="mauxanh">Xanh</a></li>
+            <li><a href="javascript:void(0)" id="mauvang">Vàng</a></li>
+            <li><a href="javascript:void(0)" id="maughi">Ghi</a></li>
+            <li><a href="javascript:void(0)" id="mautim">Tím</a></li>
+        </ul>
+        <div id="content" class="clearfix">Lập trình web với PHP</div>
+    </div>
+
+    <div id="main1">
+        <h3>Chọn màu chữ</h3>
+        <ul class="clearfix">
+            <li><a href="javascript:void(0)" id="maudo">Đỏ</a></li>
+            <li><a href="javascript:void(0)" id="mauxanh">Xanh</a></li>
+            <li><a href="javascript:void(0)" id="mauvang">Vàng</a></li>
+            <li><a href="javascript:void(0)" id="maughi">Ghi</a></li>
+            <li><a href="javascript:void(0)" id="mautim">Tím</a></li>
+        </ul>
+        <div id="content" class="clearfix">Lập trình web với PHP</div>
+    </div>
 </body>
 </html>
